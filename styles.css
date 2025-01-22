@@ -1,0 +1,184 @@
+/* Initial Styles */
+
+:root {
+    --background-color: #000;
+    --accent: #8f8f8f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/* Container Styles */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 798px;
+    width: 100%;
+    padding: 20px;
+    background-color: p;
+}
+
+.profile-pic {
+    border-radius: 40px; width: 60px;
+}
+
+/* Card 1 Styles */
+
+.card-1 p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+.chat-box {
+    position: relative;
+    background-color:  var(--background-color);
+    padding: 1.2rem 0.8rem;
+    border-radius: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .chat-box::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust to place the "V" at the bottom */
+    left: 20px; /* Adjust to place the "V" horizontally */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--background-color); /* Matches the chat box background */
+  }
+
+  /* Card 2 Styles */
+
+  .card-2 {
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 1rem 1rem;
+  }
+
+  .profile-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+ .profile-testimonial h3 {
+    margin: 0.2rem 0;
+  }
+
+ .profile-testimonial p {
+    margin: 0.2rem 0;
+  }
+
+  .card-2 p {
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  /* Card 3 Styles */
+
+  .card-3 {
+    display: flex;
+    grid-column: span 2;
+    gap: 10px;
+  }
+
+  .card-3 img {
+    max-width: 35%;
+    width: auto;
+    border-radius: 20%;
+  }
+
+  .card-3 h2 {
+    margin: 0.4rem 0;
+    font-weight: 400;
+  }
+
+  .card-3 p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .card-3-testimonial {
+    background-color: black ;
+    color: white;
+    border-radius: 30px;
+    padding: 1.5rem 2rem;
+  }
+
+  .card-3-role {
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+
+  .stars {
+    color: gold;
+    font-size: 24px; /* Adjust size */
+  }
+
+
+
+  /* Card 4 styles  */
+
+  .card-4 {
+    grid-column: span 2;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 2rem 0;
+  }
+
+  .testimonial {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  /* Slider Styles */
+
+  .slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .slider::after {
+    content: ">";
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slider::before {
+    content: "<";
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slider-fader {
+    opacity: 0.5;
+    width: 40px;
+  }
